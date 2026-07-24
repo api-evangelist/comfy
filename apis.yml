@@ -1,8 +1,25 @@
 aid: comfy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/comfy.png
 name: Comfy *
-description: 'Comfy * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Comfy (comfyapp.com) was a workplace-experience platform built by Building Robotics Inc.
+  that let employees control lighting, temperature, room booking and office navigation from a mobile app,
+  surfaced here as a GV (Google Ventures) portfolio lead. During enrichment the domain comfyapp.com was
+  found to permanently 301-redirect to Enlighted Inc. / Building Robotics Inc., a Siemens Company, where
+  the product has been rebranded as Siemens Building X space and workplace management; the Enlighted/Comfy
+  site further states operations are ramping down. No independent public API, OpenAPI, SDK, developer
+  portal, well-known discovery surface, or security.txt was found for Comfy or its successor as of this
+  pass. This profile is retained as an acquired/defunct stub with domain-security probe data.'
 url: https://raw.githubusercontent.com/api-evangelist/comfy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,19 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Siemens (Enlighted Inc. / Building Robotics Inc.)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Frontier Tech
+- Workplace Experience
+- Smart Buildings
+- PropTech
+- Internet of Things
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/comfy-domain-security.yml
 - type: Website
   url: http://comfyapp.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

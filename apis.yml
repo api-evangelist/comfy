@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'http://comfyapp.com', status: 302, note: 'declared website redirects to https://www.enlightedinc.com/ — a different registrable domain (comfyapp.com -> enlightedinc.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/comfy.png
 name: Comfy *
 description: 'Comfy (comfyapp.com) was a workplace-experience platform built by Building Robotics Inc.
